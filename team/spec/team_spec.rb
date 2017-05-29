@@ -2,7 +2,7 @@ require ('minitest/autorun')
 require('minitest/rg')
 require_relative('../team')
 
-class TestBankAccount < MiniTest::Test
+class TestTeam < MiniTest::Test
 
   
 
@@ -16,7 +16,8 @@ assert_equal(["Filipe", "Eugene", "Pedro", "Zsolt"], @team.add_player("Zsolt"))
 end
 
 
-
-
+def test_player_in_team
+assert_equal(true, @team.player_team("Pedro"))
+end
 
 end

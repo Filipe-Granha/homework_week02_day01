@@ -34,13 +34,20 @@ end
 # end
 
 
-
 def add_player(new_player)
 players.push(new_player)
 end
 
 
 
+def player_team(name)
 
+if @players.include?(name)
+  return true
+else
+  return false
+end
+
+end
 
 end
