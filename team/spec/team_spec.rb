@@ -7,7 +7,7 @@ class TestTeam < MiniTest::Test
   
 
 def setup
-  @team = Team.new("Porto", ["Filipe", "Eugene", "Pedro"], "Mourinho")
+  @team = Team.new("Porto", ["Filipe", "Eugene", "Pedro"], "Mourinho", 0)
 end
 
 
@@ -19,5 +19,13 @@ end
 def test_player_in_team
 assert_equal(true, @team.player_team("Pedro"))
 end
+
+
+
+
+
+
+
+
 
 end

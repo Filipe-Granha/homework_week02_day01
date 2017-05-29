@@ -5,12 +5,13 @@ attr_reader :name, :players, :coach
 attr_writer :coach
 
 
-def initialize(name, players, coach)
+def initialize(name, players, coach, points)
 
 
 @name = name
 @players = players
 @coach = coach
+@points = points
 end
 
 
@@ -49,5 +50,11 @@ else
 end
 
 end
+
+
+
+
+
+
 
 end
