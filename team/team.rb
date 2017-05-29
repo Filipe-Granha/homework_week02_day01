@@ -1,18 +1,18 @@
 class Team
 
-attr_reader :name, :players, :coach
+  attr_reader :name, :players, :coach
 
-attr_writer :coach
-
-
-def initialize(name, players, coach, points)
+  attr_writer :coach
 
 
-@name = name
-@players = players
-@coach = coach
-@points = points
-end
+  def initialize(name, players, coach, points)
+
+
+    @name = name
+    @players = players
+    @coach = coach
+    @points = points
+  end
 
 
 
@@ -36,22 +36,27 @@ end
 
 
 def add_player(new_player)
-players.push(new_player)
+  players.push(new_player)
 end
 
 
 
 def player_team(name)
 
-if @players.include?(name)
-  return true
-else
-  return false
+  if @players.include?(name)
+    return true
+  else
+    return false
+  end
 end
 
+def points(points)
+  if @points += (points)
+    return "win"
+  else
+    return "loss"
+  end
 end
-
-
 
 
 
