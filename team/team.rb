@@ -7,6 +7,7 @@ attr_writer :coach
 
 def initialize(name, players, coach)
 
+
 @name = name
 @players = players
 @coach = coach
@@ -34,17 +35,9 @@ end
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+def add_player(new_player)
+players.push(new_player)
+end
 
 
 
